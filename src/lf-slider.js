@@ -50,11 +50,6 @@ export class Slider extends LitElement {
 		console.log(a, b, c)
 	}
 
-	updated(changedProperties) {
-		console.log(changedProperties)
-		this.update(changedProperties)
-	}
-
 	#updateValue(e) {
 		this.value = Math.max(this.min, Math.min(e.target.value, this.max))
 	}
